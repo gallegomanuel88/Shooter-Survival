@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Animating (float h, float v)
     {
-        bool idle = ((v == 0) && (h == 0));
-        anim.SetBool("IsWalking", !idle);
+        bool walking = !((v == 0) && (h == 0));
+        anim.SetBool("IsWalking", walking);
     }
 }
